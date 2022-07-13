@@ -7,11 +7,21 @@ Pcx - Point Cloud Importer/Renderer for Unity
 **Pcx** is a custom importer and renderer that allows for handling point cloud data
 in Unity.
 
-This repo is forked and adds some minor modifications to render point-clouds with a gradient across their surfaces, creating a basic 3D effect, with the intention of rendering point-clouds as if they were composed of individual spheres. Works well at small sizes.
+This repo is forked from its excellently written original source and adds some minor modifications to render point-clouds with a gradient across their surfaces, creating a basic 3D effect, with the intention of rendering point-clouds as if they were composed of individual spheres. Works well at small sizes, and has been used to visualise dynamically updating point clouds on AR headsets. 
 
-TBD
+Example from Unity Editor:
+![](ptCollShader.png)
+
+Changes Implemented to Original Repo
 ---
-Add sample demo scene of custom shader code interacting with Unity mesh.
+See sample demo scene under `Tests/GradientPtCloud_Eg`.
+Modified shader files in `Packages/jp.keijiro.pcx/Runtime/Shaders` include:
+
+- `Common_Custom.cginc`
+- `Disk_Custom.cginc`
+- `Disk_Custom.shader`
+
+A demo script: `Test/SphereTest.cs` provides a Unity interface for using the standard Unity `Mesh` class to create and render an example spherical point cloud. Further work needed here to update vertex and triangle data more efficiently.  
 
 System Requirements
 -------------------
