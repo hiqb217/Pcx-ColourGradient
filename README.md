@@ -7,6 +7,12 @@ Pcx - Point Cloud Importer/Renderer for Unity
 **Pcx** is a custom importer and renderer that allows for handling point cloud data
 in Unity.
 
+This repo is forked and adds some minor modifications to render point-clouds with a gradient across their surfaces, creating a basic 3D effect, with the intention of rendering point-clouds as if they were composed of individual spheres. Works well at small sizes.
+
+TBD
+---
+Add sample demo scene of custom shader code interacting with Unity mesh.
+
 System Requirements
 -------------------
 
